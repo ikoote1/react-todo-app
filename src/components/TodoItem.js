@@ -1,10 +1,10 @@
-// const TodoItem = () => {
-//     return(
-//         <div className="list">
-//         <input type="checkbox" />
-//         I am preim
-//       </div>
-//     )
-// }
+const TodoItem = ({text,done}) => {
+    return(
+        <div className="list">
+        <input type="checkbox" />
+        {text}
+      </div>
+    )
+}
 
-// export default TodoItem
+export default TodoItem

@@ -4,6 +4,8 @@ function InputTodo({onAdd}) {
   const [textList, setTextList] = useState("");
   function handleSubmit(ev){
     ev.preventDefault();
+    onAdd(textList);
+    setTextList( value={});
   }
   return (
       <form onSubmit={handleSubmit}>

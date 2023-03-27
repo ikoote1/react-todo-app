@@ -1,30 +1,22 @@
-// import { useState } from 'react';
-// import InputTodo from './InputToDo';
-// import TodosList from './TodosList';
-// // other imported components here
-// const TodosLogic = () => {
-//   const [todos, setTodos] = useState([
-//     {
-//       id: 1,
-//       title: 'Setup development environment',
-//       completed: true,
-//     },
-//     {
-//       id: 2,
-//       title: 'Develop website and add content',
-//       completed: false,
-//     },
-//     {
-//       id: 3,
-//       title: 'Deploy to live server',
-//       completed: false,
-//     },
-//   ]);
-//   return (
-//     <div>
-//       <InputTodo />
-//       <TodosList todosProps={todos} setTodos={setTodos} />
-//     </div>
-//   );
-// };
-// export default TodosLogic;
+import { useState } from 'react';
+import InputToDo from './InputToDo';
+import TodoItem from './components/TodoItem';
+
+const TodoLogic = () =>{
+    const{tasks,setTasks} = useState([]);
+    function addTask(text){
+        setTasks(value:prev=>{
+            return [...prev,{text:text,done:false}]
+        });
+    }
+    return(
+        <div>
+             <InputToDo onAdd={addTask}/>
+            {tasks.map(task => (
+                <TodoItem {...task}/>
+            ))}
+        </div>
+    );
+}
+
+export default TodoLogic
