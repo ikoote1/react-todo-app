@@ -1,10 +1,14 @@
 import './App.css';
-import TodosLogic from './components/TodosLogic';
+import InputToDo from './components/InputToDo';
+// import TodoItem from './components/TodoItem';
+// import TodosLogic from './components/TodosLogic';
 
 function App() {
   return (
     <div className="App">
-      < TodosLogic />
+      <InputToDo />
+      {/* <TodoItem /> */}
+      {/* <TodosLogic /> */}
     </div>
   );
 }

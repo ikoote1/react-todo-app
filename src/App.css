@@ -1,4 +1,29 @@
 .App {
-  background: blue;
+  width: 40%;
+  margin: 40px auto;
+  height: 600px;
+  background: rgb(245, 243, 243);
+  border-radius: 15px;
 }
 
+form{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 10px;
+  height: 40px;
+}
+
+.add-text{
+  width: 100%;
+  border-radius: 15px;
+  border: solid white;
+}
+
+.submit-button{
+  border-radius: 15px;
+  border: solid white;
+  background: white;
+}
