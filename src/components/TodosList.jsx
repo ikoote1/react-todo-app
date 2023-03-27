@@ -8,5 +8,6 @@ const TodosList = ({ todosProps, setTodos }) => {
       </ul>
     );
   };
+  
   export default TodosList;
   

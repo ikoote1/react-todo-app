@@ -20,7 +20,7 @@ const TodosLogic = () => {
   ]);
   return (
     <div>
-    <InputTodo />
+    {/* <InputTodo /> */}
     <TodosList todosProps={todos} setTodos={setTodos} />
   </div>
   );
