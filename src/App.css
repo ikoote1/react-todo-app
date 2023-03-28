@@ -37,7 +37,7 @@ button {
   border: 0.5px solid;
 }
 
-.buts{
+.buts {
   height: 20px;
   margin-bottom: 5px;
 }
@@ -82,7 +82,7 @@ form {
   padding: 3px 3px;
 }
 
-.todo-header{
+.todo-header {
   font-size: 10px;
   position: relative;
   left: 46%;
