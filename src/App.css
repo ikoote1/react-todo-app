@@ -1,29 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-  width: 40%;
-  margin: 40px auto;
-  height: 600px;
-  background: rgb(245, 243, 243);
-  border-radius: 15px;
-}
-
-form{
-  width: 90%;
-  margin: 0 auto;
   display: flex;
-  flex-direction: row;
-  position: relative;
-  top: 10px;
-  height: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f6f6f6;
+  padding: 0 15%;
 }
 
-.add-text{
+.disable {
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.todos {
+  border: 1px solid gray;
   width: 100%;
-  border-radius: 15px;
-  border: solid white;
+  max-width: 750px;
+  padding: 4px 4px;
 }
 
-.submit-button{
-  border-radius: 15px;
-  border: solid white;
-  background: white;
+button {
+  margin-left: 5px;
+}
+
+button svg {
+  color: #5e5e5e;
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+.todoitem {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 0;
+  border-bottom: 1px solid gray;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 0;
+}
+
+.input-text {
+  width: 100%;
+  font-size: 20px;
+  padding: 2px;
+}
+
+.todoitem input {
+  margin-right: 5px;
+}
+
+.mark {
+  text-decoration: line-through;
+}
+
+.clear {
+  width: 100%;
+  margin: 0;
+  border: none;
+  padding: 3px 3px;
 }
