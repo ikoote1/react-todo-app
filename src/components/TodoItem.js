@@ -1,8 +1,5 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-// import { FaTrash } from 'react-icons/fa';
-// import { AiFillEdit } from 'react-icons/ai';
-// import { BiSave } from 'react-icons/bi';
 
 export default function TodoItem({
   item,
@@ -38,13 +35,11 @@ export default function TodoItem({
           <span className={item.completed ? 'mark' : ''}>{title}</span>
         </div>
         <div>
-          <button type="button" onClick={handelEditClick}>
-            {/* <AiFillEdit /> */}
-            E
+          <button type="button" className="buts" onClick={handelEditClick}>
+            Edit
           </button>
-          <button type="button" onClick={() => handelDelClick(item.id)}>
-            {/* <FaTrash /> */}
-            D
+          <button type="button" className="buts" onClick={() => handelDelClick(item.id)}>
+            Del
           </button>
         </div>
       </div>
@@ -55,9 +50,8 @@ export default function TodoItem({
           value={title}
           onChange={handelEdit}
         />
-        <button type="button" onClick={() => saveClick(item.id, title)}>
-          {/* <BiSave /> */}
-          =
+        <button type="button" className="buts" onClick={() => saveClick(item.id, title)}>
+          Sav
         </button>
       </div>
     </li>
