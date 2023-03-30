@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-// import { FaPlusCircle } from 'react-icons/fa';
 
 export default function InputTodo({ addItem }) {
   const [title, setTitle] = useState('');
