@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f6f6f6;
+  padding: 0 15%;
+}
+
+.disable {
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.todos {
+  border: 1px solid rgb(54, 53, 53);
+  width: 100%;
+  max-width: 750px;
+  padding: 4px 4px;
+  background: #c2bfbf;
+  border-radius: 10px;
+}
+
+button {
+  margin-left: 5px;
+  width: 40px;
+  border-radius: 5px;
+  border: 0.5px solid;
+}
+
+.buts {
+  height: 20px;
+  margin-bottom: 5px;
+}
+
+button svg {
+  color: #5e5e5e;
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+.todoitem {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 0;
+  border-bottom: 1px solid gray;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 0;
+}
+
+.input-text {
+  width: 100%;
+  font-size: 20px;
+  padding: 2px;
+}
+
+.todoitem input {
+  margin-right: 5px;
+}
+
+.mark {
+  text-decoration: line-through;
+}
+
+.clear {
+  width: 100%;
+  margin: 0;
+  border: none;
+  padding: 3px 3px;
+}
+
+.todo-header {
+  font-size: 10px;
+  position: relative;
+  left: 46%;
+  color: #414040;
+}
